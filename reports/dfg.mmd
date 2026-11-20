@@ -1,0 +1,32 @@
+flowchart LR
+    A0["Approve purchase requisition"]
+    A1["Change purchase order"]
+    A2["Create purchase order"]
+    A3["Create purchase requisition"]
+    A4["Match invoice"]
+    A5["Pay invoice"]
+    A6["Receive invoice"]
+    A7["Record goods receipt"]
+    A8["Resolve price difference"]
+    A9["Send purchase order"]
+    A2 -->|"2380 cases, 0.2 d"| A9
+    A6 -->|"2259 cases, 0.8 d"| A4
+    A3 -->|"1956 cases, 0.8 d"| A2
+    A4 -->|"1667 cases, 13.8 d"| A5
+    A7 -->|"1239 cases, 5.8 d"| A6
+    A9 -->|"1235 cases, 5.5 d"| A7
+    A9 -->|"1145 cases, 5.3 d"| A6
+    A4 -->|"965 cases, 5.2 d"| A7
+    A7 -->|"833 cases, 13.9 d"| A5
+    A3 -->|"544 cases, 1.4 d"| A0
+    A0 -->|"544 cases, 0.9 d"| A2
+    A8 -->|"352 cases, 0.8 d"| A4
+    A1 -->|"245 cases, 0.1 d"| A9
+    A9 -->|"245 cases, 1.7 d"| A1
+    A7 -->|"241 cases, 1.2 d"| A4
+    A4 -->|"220 cases, 5.7 d"| A8
+    A7 -->|"132 cases, 5.1 d"| A8
+    A6 -->|"121 cases, 0.4 d"| A7
+    A2 -->|"120 cases, 0.9 d"| A7
+    A6 -->|"120 cases, 1.8 d"| A3
+    A5 -->|"64 cases, 28.0 d"| A7

@@ -1,0 +1,10 @@
+{
+  "cases": 2500.0,
+  "median_throughput_days": 31.3,
+  "p90_throughput_days": 58.9,
+  "on_time_payment_rate": 0.769,
+  "rework_rate": 0.222,
+  "first_time_match_rate": 0.859,
+  "automation_rate": 0.548,
+  "approval_sla_breach_rate": 0.287
+}
