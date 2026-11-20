@@ -1,0 +1,11 @@
+activity,happy_path_order,is_rework
+Create purchase requisition,1.0,False
+Create purchase order,2.0,False
+Send purchase order,3.0,False
+Record goods receipt,4.0,False
+Receive invoice,5.0,False
+Match invoice,6.0,False
+Pay invoice,7.0,False
+Approve purchase requisition,,False
+Change purchase order,,True
+Resolve price difference,,True
